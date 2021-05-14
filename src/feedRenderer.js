@@ -36,7 +36,7 @@ export default class FeedRenderer {
 
   addEntry(content) {
     this.locationGetter.getLocation((location) => {
-      this.feed.unshift({ content, time: formatCurrentDate(), location });
+      this.feed.push({ content, time: formatCurrentDate(), location });
       this.render();
     });
   }
