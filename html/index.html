@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+</head>
+<body>
+<div id="feed"></div>
+    <div id="feedInput">
+        <input type="text" id="inputText" />
+        <div class="mediaInputButtons">
+            <img src="../img/microphone.png" id="microphone" alt="audio input">
+            <img src="../img/camera.png" id="camera" alt="camera input">
+        </div>
+
+        <div class="recordController hidden">
+            <span class="iconOk">✓</span>
+            <span class="timer">00:00</span>
+            <span class="iconCancel">✖</span>
+        </div>
+    </div>
+
+    <div class="popupWindow hidden">
+        <div class="title">
+            Необходимо выдать права или использовать другой браузер
+            <span class="buttonCancelWindow">✖</span>
+        </div>
+    </div>
+
+
+    <div class="locationInputDialog hidden">
+        <div class="dialogTitle">Что-то пошло не так</div>
+        <div class="dialogContent">
+            К содалению, нам не удалось определить ваше местонахождение,пожалуйста,
+            дайте разрешение на использование геолокации, либо введите координаты вручную
+        </div>
+
+        <div class="dialogContent">Широта и долгота через запятую</div>
+        <input type="text" class="locationInput" />
+
+        <div class="dialogError"></div>
+
+        <div class="dialogButtons">
+            <button class="dialogButtonCancel">Отмена</button>
+            <button class="dialogButtonOk">Ок</button>
+        </div>
+    </div>
+</body>
+</html>
