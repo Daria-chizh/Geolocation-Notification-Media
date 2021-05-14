@@ -5,12 +5,13 @@ const feedRenderer = new FeedRenderer();
 const recordController = new RecordController();
 
 document.getElementById('inputText').addEventListener('keypress', (event) => {
-  const inputText = event.currentTarget.value;
+  const inputElement = event.currentTarget;
+  const inputText = inputElement.value;
   if (event.code !== 'Enter' || inputText === '') {
     return;
   }
 
-  event.currentTarget.value = '';
+  inputElement.value = '';
   event.preventDefault();
 
   const contentElement = document.createElement('div');
